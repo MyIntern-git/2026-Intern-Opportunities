@@ -1,0 +1,11 @@
+{
+"name": "myintern-jobs",
+"private": true,
+"type": "module",
+"scripts": {
+"fetch-jobs": "node scripts/fetch-jobs.js"
+},
+"dependencies": {
+"@supabase/supabase-js": "^2.39.0"
+}
+}
