@@ -27,9 +27,9 @@ jobs:
         run: npm run get-jobs
         working-directory: .github/scripts
         env:
-          SUPABASE_URL: ${{ https://ttdocryrupnhffxdsnhf.supabase.co }}
-          SUPABASE_KEY: ${{ sb_secret_13AWz7YYTTPAmoFMme4edA_Qm9hQkfw }}
-          APPLY_IMG_URL: ${{ https://placehold.co/600x400?text=Apply+Now }}
+          SUPABASE_URL: ${{ secrets.https://ttdocryrupnhffxdsnhf.supabase.co }}
+          SUPABASE_KEY: ${{ secrets.sb_secret_13AWz7YYTTPAmoFMme4edA_Qm9hQkfw }}
+          APPLY_IMG_URL: ${{ secrets.https://placehold.co/600x400?text=Apply+Now }}
 
       - name: Commit Markdown changes
         if: success()
